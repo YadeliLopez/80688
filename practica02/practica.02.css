@@ -2,3 +2,57 @@ h1 {
     padding: 15px;
     color: chartreuse;
 }
+
+span {
+    color: deeppink;
+}
+
+#p1 {
+    color: red;
+}
+
+#p2 {
+    color: darkorange;
+}
+
+#p3 {
+    color: blue;
+}
+
+#p1 {
+    color: blueviolet;
+}
+
+.peso{
+    font-weight: bold;
+    color: black !important;
+}
+
+.ui{
+    color: bisque;
+    padding: 10px; /* elemento en relación a ...*/
+}
+
+#borrar {
+    background-color: red;
+}
+
+#borrar:hover{ /*Cuando se esté sobre el elemento borrar*/
+    background-color: gray;
+}
+.ui:active{
+    background-color: aqua;
+}
+
+#cambiar{
+    background-color: darkorange;
+}
+
+#guardar {
+    background-color: green;
+}
+
+.ui:hover{
+    background-color: aqua;
+    font-weight: bold;
+}
