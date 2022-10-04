@@ -28,9 +28,12 @@
                 c[i].style.color = color
                 
             }*/
-            c.forEach(element => {
-                console.log(element)
+            var arr = [].slice.call(c)
+            arr.forEach(element => { console.log(element)
+                element.style.color = color
             });
+            
+            
         }
     </script>
 
