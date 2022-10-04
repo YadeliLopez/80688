@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background: rgb(176, 205, 250);
+        }
+
+        .ventana{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 1em;
+            max-width: 400px;
+        }
+        .ventanaCentrada{
+            position: relative;
+            margin: calc(100vh/2.0)auto;            
+        }
+        .cerrar{
+            text-decoration: none;
+            font-family: sans-serif;
+            border: 1px solid white;
+            border-radius: 90px;
+            padding: 5px;
+            position: absolute;
+            top: 10px;  
+            right: 10px;            
+        }
+        .cerrar:hover{
+            background: rgba(255,0,0,3);
+        }
+        #cerrar:target{
+            visibility: hidden;
+        }        
+    </style>
+
+</head>
+<body>
+    <!-- div.ventana.ventanaCentrada#cerrar>div.contenedor>h2.tit{titulo}+p.msj{texto}+a.cerrar{x} -->
+    <div class="ventana ventanaCentrada" id="cerrar">
+        <div class="contenedor">
+            <h2 class="tit">titulo</h2>
+            <p class="msj">texto</p>
+            <a href="" class="cerrar">x</a>
+        </div>
+    </div>
+</body>
+</html>
