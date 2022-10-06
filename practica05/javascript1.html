@@ -33,6 +33,17 @@
                 element.style.color = color
             });
         }
+
+        /*for (const p in c) {
+            if(c[p] != "lenght")
+            c[p].style.color = color
+        }*/
+
+        for (const x in c) {
+            if (Object.hasOwnProperty.call(c, x)) {
+                const element = c[x].style.color = color;
+            }
+        }
     </script>
 
 </head>
