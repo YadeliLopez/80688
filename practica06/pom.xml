@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?> <!-- Prólogo, es un metadato que dice que el archivo de cabecera es
-un xml con versión -->
+<?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion> <!-- La etiqueta raíz es project -->
+  <modelVersion>4.0.0</modelVersion>
 
-  <groupId>mx.uv.c80688</groupId> <!-- elementos -->
+  <groupId>mx.uv.c80688</groupId>
   <artifactId>practica06</artifactId>
   <version>1.0-SNAPSHOT</version>
 
@@ -15,8 +14,8 @@ un xml con versión -->
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.17</maven.compiler.source>
+    <maven.compiler.target>1.17</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -27,12 +26,34 @@ un xml con versión -->
       <scope>test</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/ -->
-    <dependency>
-      <groupId>com.sparkjava</groupId>
-      <artifactId>spark-core</artifactId>
-      <version>2.9.4</version>
-    </dependency>
+<!-- https://mvnrepository.com/artifact/com.sparkjava/spark-core -->
+<dependency>
+    <groupId>com.sparkjava</groupId>
+    <artifactId>spark-core</artifactId>
+    <version>2.9.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>1.7.21</version>
+</dependency>
+<!-- <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>2.0.3</version>
+</dependency> -->
+
+<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.8.1</version>
+</dependency>
+
+
+
   </dependencies>
 
   <build>
