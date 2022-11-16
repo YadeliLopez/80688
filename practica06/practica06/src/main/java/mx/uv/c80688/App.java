@@ -5,22 +5,22 @@ import static spark.Spark.*;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-
 /**
  * Hello world!
  *
  */
-public class App {
-    public static void main(String[] args) {
-
-        // fuente: https://gist.github.com/saeidzebardast/e375b7d17be3e0f4dddf
+public class App 
+{
+    public static void main( String[] args )
+    {
+        //fuente: https://gist.github.com/saeidzebardast/e375b7d17be3e0f4dddf
         options("/*", (request, response) -> {
-            String accessControlRequestHeaders = request.headers("Access-Control-Request-Headers");
-            if (accessControlRequestHeaders != null) {
+            String accessControlRequestHeaders = request.headers("Access-Control-Request_Headers");
+            if(accessControlRequestHeaders != null){
                 response.header("Access-Control-Allow-Headers", accessControlRequestHeaders);
             }
             String accessControlRequestMethod = request.headers("Access-Control-Request-Method");
-            if (accessControlRequestMethod != null) {
+            if(accessControlRequestMethod != null){
                 response.header("Access-Control-Allow-Methods", accessControlRequestMethod);
             }
             return "OK";
